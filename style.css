@@ -8,7 +8,6 @@
 }
 
 body {
-    margin: 0;
     background-color: var(--color-background);
     color: var(--color-text);
     font-family: var(--font-main);
@@ -40,6 +39,7 @@ a {
     color: var(--color-elements);
     padding: 20px;
     font-size: 25px;
+     transition: 0.3s ease;
 }
  header img {
     width: 168px;
@@ -49,8 +49,7 @@ a {
     margin: 0px 60px;
  }
 main h1 {
-    padding-top: 143px;
-    padding-bottom: 140px;
+    padding-bottom: 161px;
     padding-left: 200px;
     margin: auto;
     font-weight: 400;
@@ -80,12 +79,25 @@ main h3{
     font-size: 40px;
     padding: 20px 100px;
     border-radius: 20px;
+    transition: 0.3s ease;
 }
 .container{
     background-image: url(./images/Group\ 3.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
     padding-bottom: 144px;
 }
+
+.btn:hover {
+    background-color: #EEC67B;
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(238, 198, 123, 0.35);
+    transform: translateY(-2px);
+}
+nav a:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 10px rgba(238, 198, 123, 0.6);
+}
+
+
