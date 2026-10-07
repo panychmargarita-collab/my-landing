@@ -1,0 +1,91 @@
+:root {
+    --color-text: white;
+    --color-background: black;
+    --color-elements: #EEC67B;
+    --color-btn: #C5A870;
+    --font-main: "Jura", sans-serif;
+    --font-text: "Montserrat Alternates", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-main);
+}
+
+.container-header{
+    display: flex;
+    padding-top: 77px;
+    padding-left: 60px;
+    padding-right: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--font-main);
+    color: var(--color-elements);
+    padding: 20px;
+    font-size: 25px;
+}
+ header img {
+    width: 168px;
+    height: 53px;
+}
+.main-container{
+    margin: 0px 60px;
+ }
+main h1 {
+    padding-top: 143px;
+    padding-bottom: 140px;
+    padding-left: 200px;
+    margin: auto;
+    font-weight: 400;
+    display: flex;
+    font-size: 300px;
+    color: var(--color-text);
+    font-family: var(--font-main);
+}
+main span{
+    color: var(--color-elements);
+    
+}
+
+main h3{
+    color: var(--color-text);
+    font-size: 25px;
+    font-family: var(--font-text);
+    font-weight: 400;
+    padding-bottom: 43px;
+    margin: auto;
+}
+
+.btn{
+    color: var(--color-text);
+    background-color: var(--color-btn);
+    border: none;
+    font-size: 40px;
+    padding: 20px 100px;
+    border-radius: 20px;
+}
+.container{
+    background-image: url(./images/Group\ 3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    padding-bottom: 144px;
+}
