@@ -11,11 +11,12 @@ body {
     background-color: var(--color-background);
     color: var(--color-text);
     font-family: var(--font-main);
+    
 }
 
 .container-header{
     display: flex;
-    padding-top: 77px;
+    padding-top: 30px;
     padding-left: 60px;
     padding-right: 60px;
     justify-content: space-between;
@@ -47,13 +48,11 @@ a {
 }
 .main-container{
     margin: 0px 60px;
+    text-align: center;
  }
 main h1 {
-    padding-bottom: 161px;
-    padding-left: 200px;
     margin: auto;
     font-weight: 400;
-    display: flex;
     font-size: 300px;
     color: var(--color-text);
     font-family: var(--font-main);
@@ -63,15 +62,24 @@ main span{
     
 }
 
-main h3{
+main h3 {
     color: var(--color-text);
     font-size: 25px;
     font-family: var(--font-text);
     font-weight: 400;
-    padding-bottom: 43px;
     margin: auto;
+    padding-top: 104px;
+   
 }
-
+.btn-background{
+    background-image: url(./images/image\ 9.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    padding-bottom: 775px;
+}
 .btn{
     color: var(--color-text);
     background-color: var(--color-btn);
@@ -82,11 +90,12 @@ main h3{
     transition: 0.3s ease;
 }
 .container{
-    background-image: url(./images/Group\ 3.png);
+    background-image: url(./images/image\ 6.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-position: center;
-    padding-bottom: 144px;
+    height: 1200px;
+    
 }
 
 .btn:hover {
