@@ -55,14 +55,14 @@ a {
     height: 53px;
 }
 .background{
-    background-image: url("./images/image 6.png");
+    background-image: url("./images/Group\ 5.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100vw;
     margin-left: calc(50% - 50vw);
     min-height: 1200px;
-    height: 938px;
+    height: 1600px;
 }
 .main-container{
     text-align: center;
@@ -88,15 +88,7 @@ main h3 {
     padding-top: 104px;
    
 }
-.btn-background{
-    background-image: url(./images/image\ 9.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100% auto;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    padding-bottom: 775px;
-}
+
 .btn{
     color: var(--color-text);
     background-color: var(--color-btn);
@@ -118,7 +110,7 @@ nav a:hover {
     text-shadow: 0 0 10px rgba(238, 198, 123, 0.6);
 }
 .tariffs{
-    padding-top: 134px;
+    padding-top: 20px;
 }
 section h2{
     font-size: 100px;
@@ -424,7 +416,7 @@ section h3{
     background-color: rgba(0, 0, 0, 0.7);
     padding: 50px;
     border-radius: 20px;
-    width: 600px;
+    width: 745px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
