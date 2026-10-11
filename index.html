@@ -20,19 +20,20 @@
   </head>
   <body>
      <div class="container">
-    <header>
+    <div class="background">
+      <header>
       <div class="container-header">
         <img src="./images/Rectangle 2.svg" alt="logo" />
         <nav>
-          <a href="#">Головна</a>
-          <a href="#">Про нас</a>
-          <a href="#">Ціна</a>
-          <a href="#">Відгуки</a>
-          <a href="#">Контакти</a>
+          <a href="#main">Головна</a>
+          <a href="#price">Ціна</a>
+          <a href="#advantages">Про нас</a>
+          <a href="#review">Відгуки</a>
+          <a href="#footer">Контакти</a>
         </nav>
       </div>
     </header>
-    <main>
+    <main id="main">
       <div class="main-container">
         <h3>Твоя подорож починається тут</h3>
          <h1>Vie <span>Go</span></h1>
@@ -41,11 +42,10 @@
         </div>
       </div>
     </main>
-    <section>
-      <div class="text-card">
+    </div>
+    <section class="tariffs" id="price">
       <h2>Популярні тури</h2>
       <h3>Обери подорож</h3>
-      </div>
       <div class="cards-container">
       <div class="card-one">
         <h3>Альпи</h3>
@@ -109,7 +109,7 @@
       </div>
       </div>
     </section>
-    <section class="numbers">
+    <section class="numbers" id="advantages">
     <div class="number-card">
         <h2>5 000+</h2>
         <p>Щасливих мандрівників</p>
@@ -123,7 +123,7 @@
         <p>Країн для подорожей</p>
     </div>
 </section>
-    <section class="cards-advantages">
+    <section class="cards-advantages" id="advantages">
       <span>Чому варто</span>
       <h2>подоружувати з нами?</h2>
       <div class="card-advantages-container">
@@ -156,6 +156,97 @@
         </div>
       </div>
     </section>
+    <section class="review" id="review">
+      <h2>Відгуки</h2>
+      <p>Враження наших клієнтів</p>
+      <div class="review-cards">
+        <div class="review-card">
+    <img class="star" src="./images/Frame 38.svg" alt="Зірки">
+    <p>
+        Чудово провела відпустку в Італії!  Готель був затишний, а 
+        трансфер  — дуже зручний. Обов’язково звернуся ще раз!
+    </p>
+  </div>
+  <div class="review-card">
+    <img class="star" src="./images/Frame 38.svg" alt="Зірки">
+    <p>
+       Їздили до Греції всією сім’єю Усе було добре організовано, а підтримка  швидко відповідала на наші запитання. Дякуємо ViaGo!
+    </p>
+  </div>
+  <div class="review-card">
+    <img class="star" src="./images/Frame 38.svg" alt="Зірки">
+    <p>
+        Подорож до Франції перевершила мої очікування!  Гарний готель, комфортний трансфер і багато незабутніх вражень.
+    </p>
+  </div>
+</div>
+    </section>
+    <section class="forms" id="forms">
+      <div class="card-form">
+      <h2>Час вирушати назустріч новим враженням!</h2>
+     <input type="name" name="name" id="name" required placeholder="Ім'я">
+     <br>
+     <br>
+     <input type="phone" name="phone" id="phone" required placeholder="+380  XX XXX XX XX">
+     <br>
+     <br>
+     <select name="place" id="place">
+      <option value="Alps">Альпи</option>
+      <option value="France">Франція</option>
+      <option value="Turkey">Туреччина</option>
+      <option value="Thailand">Таїланд</option>
+      <option value="Sweden">Швеція</option>
+      <option value="Maldives">Мальдіви</option>
+     </select>
+     <br>
+     <br>
+     <textarea id="comment" name="comment" placeholder="Коментарій...."></textarea>
+     <br>
+     <br>
+     <button>Забронювати</button>
+     </div>
+    </section>
+    <footer class="footer" id="footer">
+      <div class="footer-header">
+       <img src="./images/Rectangle 2.svg" alt="logo" />
+        <nav class="header-footer">
+          <a href="#main">Головна</a>
+          <a href="#price">Ціна</a>
+          <a href="#advantages">Про нас</a>
+          <a href="#review">Відгуки</a>
+          <a href="#footer">Контакти</a>
+        </nav>
+        </div>
+        <div class="text">
+        <div class="schedule">
+        <h3>Графік роботи</h3>
+        <br>
+        <p>Пн - Пт: 9:00-19:00</p>
+        <br>
+        <p>Сб - Нд: 10:00 - 18:00</p>
+        <br>
+        <p>Підтримка туристів: цілодобово, 24/7</p>
+        </div>
+        <div class="contacts">
+        <h3>Контакти</h3>
+        <br>
+         <p>+380 67 123 45 67</p>
+         <br>
+         <p>hello@viago.ua</p>
+         <br>
+         <p>м. Київ, вул. Хрещатик, 22</p>
+        </div>
+        </div>
+        <div class="social-info">
+        <div class="social">
+        <img src="./images/Vector.svg" alt="telegrame">
+        <img  src="./images/akar-icons_instagram-fill.svg" alt="instagrame">
+        <img src="./images/carbon_email.svg" alt="email">
+        </div> 
+        <p class="info">© 2026 ViaGo. Усі права захищені.</p>
+        </div>
+    </footer>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
