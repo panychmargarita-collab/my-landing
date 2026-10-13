@@ -6,16 +6,18 @@
     --font-main: "Jura", sans-serif;
     --font-text: "Montserrat Alternates", sans-serif;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .container{
-    max-width: 1440px;
+   
     width: 100%;
-    margin: 0 auto;
-    
+    margin: auto;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 body {
     background-color: #131212;
@@ -55,14 +57,17 @@ a {
     height: 53px;
 }
 .background{
-    background-image: url("./images/Group\ 5.png");
+    background-image: url("./images/image\ 32.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100vw;
     margin-left: calc(50% - 50vw);
     min-height: 1200px;
-    height: 1600px;
+    height: 1200px;
+}
+.main-container img{
+    width: 2000px;
 }
 .main-container{
     text-align: center;
@@ -110,7 +115,7 @@ nav a:hover {
     text-shadow: 0 0 10px rgba(238, 198, 123, 0.6);
 }
 .tariffs{
-    padding-top: 20px;
+    padding-top: 500px;
 }
 section h2{
     font-size: 100px;
@@ -528,7 +533,9 @@ select{
     align-items: flex-start;
     margin-top: 60px;
 }
-
+.line-footer{
+    display: none;
+}
 
 
 .contacts {
@@ -552,5 +559,351 @@ select{
     text-align: end;
     margin: 0;
 }
+.burger{
+    display: none;
+}
+@media (max-width: 1280px) {
+    .container {
+        width: 100%;
+    }
+    .background{
+        min-height: 1100px;
+        height: 1100px;
+}   
+    .main-container img{
+        width: 1280px;
+    }
+    .tariffs{
+    padding-top: 200px;
+}
+.numbers h2 {
+    font-size: 95px;
+}
+
+}
+@media (max-width: 375px) {
+     .container {
+        padding: 0px;
+        width: 100%;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .burger img{
+        width: 26px;
+        height: 17px;
+    } 
+    .container-header {
+        padding: 15px;
+        display: flex;
+        gap: 15px;
+    }
+    header img {
+        width: 90px;
+        height: auto;
+    }
+    nav {
+        display: none
+    }
+    .background {
+       background-image: url(./images/image\ 29.png);
+        height: 450px;
+        min-height: 450px;
+        
+         
+    }
+    main h3 {
+        font-size: 17px;
+        padding: 50px 10px 0;
+    }
+
+    main h1 {
+        font-size: 120px;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 17px 73px;
+    }
+    .main-container img{
+        padding-top: 10px;
+        width: 372px;
+    }
 
 
+    section h2{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    section h3 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .tariffs {
+        padding: 80px 15px 0;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .card-one,
+    .card-two,
+    .card-three,
+    .card-four,
+    .card-five,
+    .card-six {
+        width: 100%;
+        height: 380px;
+    }
+    .cards-container h3 {
+        font-size: 20px;
+    }
+    .cards-container p {
+        font-size: 10px;
+    }
+    .price{
+        font-size: 10px;
+    }
+     .price-btn .title{
+        font-size: 20px;
+    }
+    .btn-card {
+        padding: 10px;
+        font-size: 10px;
+    }
+    .cards-container {
+     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-bottom: 15px;
+}
+.card-one,
+.card-two,
+.card-three,
+.card-four,
+.card-five,
+.card-six {
+    width: 85%;
+    height: 380px;
+    flex-shrink: 0;
+}
+    .numbers {
+        flex-direction: column;
+        gap: 15px;
+        padding: 60px 15px 0;
+    }
+    .number-card {
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .numbers h2 {
+        font-size: 50px;
+    }
+    .numbers p {
+        font-size: 17px;
+    }
+    .cards-advantages {
+        padding: 60px 15px 0;
+    }
+    .cards-advantages span {
+        font-size: 35px;
+    }
+    .cards-advantages h2 {
+        font-size: 35px;
+        padding-bottom: 30px;
+    }
+    .card-advantages-container{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 25px;
+}
+.card-advantages{
+    width: 85%;
+    height: 380px;
+    flex-shrink: 0;
+}
+
+    .card-advantages {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .card-text {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .card-advantages-container h3 {
+        font-size: 25px;
+    }
+
+    .card-advantages-container p {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .card-advantages-container img,
+    .advantages-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .review {
+        padding: 60px 15px 0;
+    }
+    .review h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .review p {
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+
+    .review-cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .review-card {
+        width: 100%;
+        padding: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    .review-cards p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .star {
+        max-width: 100%;
+        height: auto;
+    }
+    .forms {
+        background-image: url(./images/image\ 14.png);
+        width: 100%;
+        margin-left: calc(50% - 50vw);
+        margin-top: 70px;
+        padding: 50px 15px;
+        min-height: 0;
+    }
+
+    .card-form {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .forms h2 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 100%;
+        min-width: 0;
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    textarea {
+        height: 120px;
+    }
+
+    .forms button {
+        padding: 15px;
+        font-size: 15px;
+    }
+   
+.footer {
+    width: 100%;
+    margin-top: 70px;
+    padding: 30px 15px;
+}
+
+.footer-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    background: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: none;
+    box-shadow: none;
+}
+.footer-header img {
+    width: 90px;
+    height: auto;
+}
+.header-footer {
+    display: none;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.schedule,
+.contacts {
+    padding-top: 0;
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+.line-footer{
+    display: inline;
+    width: 100%;
+    height: 1px;
+    background-color: #fcfcfc7c;
+}
+.social-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social img {
+    max-width: 28px;
+    height: auto;
+}
+
+.info {
+    text-align: center;
+    color: white;
+}
+
+}

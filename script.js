@@ -53,3 +53,6 @@ slider.addEventListener('mousemove', (e) => {
     e.preventDefault();
     slider.scrollLeft = scrollLeft - (e.pageX - startX);
 });
+
+
+
