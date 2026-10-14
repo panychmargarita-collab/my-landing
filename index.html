@@ -25,7 +25,9 @@
       <div class="container-header">
         <img src="./images/Rectangle 2.svg" alt="logo" />
         <div class="burger">
-          <img src="./images/2 Vector.svg" alt="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
         <nav>
           <a href="#main">Головна</a>
@@ -40,8 +42,8 @@
       <div class="main-container">
         <h3>Твоя подорож починається тут</h3>
          <h1>Via<span>Go</span></h1>
-         <button class="btn">Забронювати</button>
-         <img src="./images/image 10.png" alt="">
+         <a href="#forms" class="btn">Забронювати</a>
+         <img src="./images/image 10.png" alt="plane">
       </div>
     </main>
     </div>
@@ -144,7 +146,7 @@
         <h3>Власний трансфер</h3>
         <p>Доставимо з аеропорту до готелю <br>та назад без зайвих турбот.</p>
         </div>
-        <img class="advantages-img" src="./images/Rectangle 0.png" alt="sea">
+        <img class="advantages-img" src="./images/Rectangle 0.png" alt="bus">
         </div>
         </div>
         <div class="card-advantages">
@@ -153,7 +155,7 @@
         <h3>На зв’язку 24/7</h3>
         <p>Ми на зв’язку цілий рік, щоб <br>допомогти в будь-якій ситуації.</p>
         </div>
-        <img class="advantages-img" src="./images/Rectangle 1.png" alt="sea">
+        <img class="advantages-img" src="./images/Rectangle 1.png" alt="people">
         </div>
         </div>
       </div>
@@ -184,12 +186,12 @@
 </div>
     </section>
     <section class="forms" id="forms">
-      <div class="card-form">
+      <form class="card-form" id="bookingForm">
       <h2>Час вирушати назустріч новим враженням!</h2>
-     <input type="name" name="name" id="name" required placeholder="Ім'я">
+     <input type="text" name="name" id="name" required placeholder="Ім'я">
      <br>
      <br>
-     <input type="phone" name="phone" id="phone" required placeholder="+380  XX XXX XX XX">
+     <input type="tel" name="phone" id="phone" required placeholder="+380  XX XXX XX XX">
      <br>
      <br>
      <select name="place" id="place">
@@ -205,8 +207,8 @@
      <textarea id="comment" name="comment" placeholder="Коментарій...."></textarea>
      <br>
      <br>
-     <button>Забронювати</button>
-     </div>
+     <button type="submit">Відправити</button>
+    </form>
     </section>
     <footer class="footer" id="footer">
       <div class="footer-header">
