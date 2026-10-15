@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css">
     <title>ViaGo</title>
   </head>
   <body>
@@ -40,8 +40,8 @@
     </header>
     <main id="main">
       <div class="main-container">
-        <h3>Твоя подорож починається тут</h3>
-         <h1>Via<span>Go</span></h1>
+        <h1>Via<span>Go</span></h1>
+        <h2>Твоя подорож починається тут</h3>  
          <a href="#forms" class="btn">Забронювати</a>
          <img src="./images/image 10.png" alt="plane">
       </div>
@@ -137,7 +137,7 @@
         <h3>Власна мережа готелів</h3>
         <p>5 готелів у популярних туристичних <br>напрямках для комфортного відпочинку.</p>
         </div>
-        <img class="advantages-img" src="./images/Rectangle 10.png" alt="sea">
+        <img class="advantages-img" src="../images/Rectangle 10.png" alt="sea">
         </div>
         </div>
         <div class="card-advantages">
@@ -146,7 +146,7 @@
         <h3>Власний трансфер</h3>
         <p>Доставимо з аеропорту до готелю <br>та назад без зайвих турбот.</p>
         </div>
-        <img class="advantages-img" src="./images/Rectangle 0.png" alt="bus">
+        <img class="advantages-img" src="../images/Rectangle 0.png" alt="bus">
         </div>
         </div>
         <div class="card-advantages">
@@ -155,7 +155,7 @@
         <h3>На зв’язку 24/7</h3>
         <p>Ми на зв’язку цілий рік, щоб <br>допомогти в будь-якій ситуації.</p>
         </div>
-        <img class="advantages-img" src="./images/Rectangle 1.png" alt="people">
+        <img class="advantages-img" src="../images/Rectangle 1.png" alt="people">
         </div>
         </div>
       </div>
@@ -186,15 +186,22 @@
 </div>
     </section>
     <section class="forms" id="forms">
-      <form class="card-form" id="bookingForm">
+      <form class="card-form" id="bookingForm" required>
       <h2>Час вирушати назустріч новим враженням!</h2>
+      <label for="name">Ваше імя:</label>
      <input type="text" name="name" id="name" required placeholder="Ім'я">
      <br>
      <br>
+     <label for="email">Електронна пошта:</label>
+<input type="email" name="email" id="email" required placeholder="example@email.com">
+<br>
+<br>
+     <label for="phone">Номер телефону:</label>
      <input type="tel" name="phone" id="phone" required placeholder="+380  XX XXX XX XX">
      <br>
      <br>
-     <select name="place" id="place">
+     <label for="place">Оберіть країну:</label>
+     <select name="place" id="place" required>
       <option value="Alps">Альпи</option>
       <option value="France">Франція</option>
       <option value="Turkey">Туреччина</option>
@@ -204,7 +211,8 @@
      </select>
      <br>
      <br>
-     <textarea id="comment" name="comment" placeholder="Коментарій...."></textarea>
+     <label for="comment">Коментар:</label>
+     <textarea id="comment" name="comment" placeholder="Коментар (за бажанням)"></textarea>
      <br>
      <br>
      <button type="submit">Відправити</button>
@@ -252,6 +260,6 @@
         </div>
     </footer>
     </div>
-    <script src="./script.js"></script>
+<script src="./js/script.js"></script>
   </body>
 </html>
