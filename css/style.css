@@ -1089,7 +1089,7 @@ select {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
     .container {
         padding: 0px;
         width: 100%;
@@ -1155,7 +1155,7 @@ select {
 
     .main-container img {
         padding-top: 20px;
-        width: 372px;
+        width: 450px;
     }
 
     section h2 {
