@@ -188,6 +188,11 @@ section h3 {
 }
 
 .btn-card {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
     border: none;
     border-radius: 10px;
     padding: 15px 20px;
@@ -200,7 +205,7 @@ section h3 {
 .btn-card:hover {
     background-color: var(--color-elements);
     color: var(--color-white);
-    transition: 0,5s;
+    transition: 0.5s;
 }
 
 .cards-container p {
@@ -721,7 +726,7 @@ select {
         display: flex;
     }
 
-    a {
+    nav a {
         text-align: center;
         padding: 20px 5px;
         margin: 0;
@@ -825,6 +830,7 @@ select {
     }
 
     .btn-card {
+        border-radius: 5px;
         padding: 12px 15px;
         font-size: 14px;
     }
@@ -1122,7 +1128,7 @@ select {
         padding-right: 0px;
     }
 
-    a {
+    nav a {
         text-align: center;
         padding: 20px 5px;
         margin: 0;
@@ -1134,8 +1140,8 @@ select {
 
     .background {
         background-image: url("../images/image\ 29.png");
-        height: 450px;
-        min-height: 450px;
+        height: 470px;
+        min-height: 470px;
     }
 
     main h2 {
@@ -1169,7 +1175,7 @@ select {
     }
 
     .tariffs {
-        padding: 80px 15px 0;
+        padding: 100px 15px 0;
     }
 
     .cards-container {
@@ -1205,7 +1211,7 @@ select {
     }
 
     .btn-card {
-        padding: 10px;
+        padding: 10px 20px;
         font-size: 10px;
     }
 
